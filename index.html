@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚀 Crypto Tracker</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search crypto..." />
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>24h %</th>
+          <th>Market Cap</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+      <tbody id="cryptoTable"></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Updated every 60 seconds · Powered by CoinGecko API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
